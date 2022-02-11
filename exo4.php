@@ -1,6 +1,6 @@
 <?php
 
-for($i=0 ; $i<26 ; $i++){
+for($i=25; $i>0 ; $i--){
 echo "<ul>"  ;  
 echo "<li>".$i."</li>";
 echo "</ul>"; 
