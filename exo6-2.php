@@ -13,25 +13,28 @@
 <input type="number" id="number" name="number"
         >        
 
-
 </body>
 </html>
 
 <?php
+
 if (isset($_GET['number'])){
-$num=$_GET['number'];
-if ($num%2 ==1 ){
+     
+    function ispair($num){
 
+        if ($num%2 ==1 ){
 
-    echo " le nombre $num est impair";
-}else{
+            echo " le nombre $num est impair";
+        }else{
+        
+            echo "le nombre $num est pair";
+        }
+            
+    }
 
-    echo "le nombre $num est pair";
+    $num=$_GET['number'];
+    ispair($num);
 
-}
-    
-}
+    }
 
-
-
-?>
+     
